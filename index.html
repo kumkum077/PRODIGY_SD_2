@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Level Guessing Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="game-container">
+      <h1>🎯 Number Guessing Game</h1>
+      <p class="subtitle">I'm thinking of a number between <strong>1</strong> and <strong>100</strong>. Can you guess it?</p>
+      <div class="input-group">
+        <input type="number" id="userGuess" placeholder="Enter your guess" min="1" max="100">
+        <button onclick="checkGuess()">Guess</button>
+      </div>
+      <p id="message"></p>
+      <p id="attempts"></p>
+      <button id="resetBtn" onclick="resetGame()">🔁 Play Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
